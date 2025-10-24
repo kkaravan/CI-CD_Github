@@ -36,7 +36,7 @@ jobs:
         run: mvn dependency:resolve
 
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn compile
 
       - name: Run unit tests
         run: mvn test
